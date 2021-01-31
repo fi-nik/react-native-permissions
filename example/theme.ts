@@ -1,4 +1,79 @@
-import {DefaultTheme} from 'react-native-paper';
+import {configureFonts, DefaultTheme} from 'react-native-paper';
+
+const fontConfig = {
+  web: {
+    regular: {
+      fontFamily: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontWeight: '400',
+    },
+    medium: {
+      fontFamily: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontWeight: '500',
+    },
+    light: {
+      fontFamily: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontWeight: '300',
+    },
+    thin: {
+      fontFamily: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+      fontWeight: '100',
+    },
+  },
+  ios: {
+    regular: {
+      fontFamily: 'System',
+      fontWeight: '400',
+    },
+    medium: {
+      fontFamily: 'System',
+      fontWeight: '500',
+    },
+    light: {
+      fontFamily: 'System',
+      fontWeight: '300',
+    },
+    thin: {
+      fontFamily: 'System',
+      fontWeight: '100',
+    },
+  },
+  macos: {
+    regular: {
+      fontFamily: 'System',
+      fontWeight: '400',
+    },
+    medium: {
+      fontFamily: 'System',
+      fontWeight: '500',
+    },
+    light: {
+      fontFamily: 'System',
+      fontWeight: '300',
+    },
+    thin: {
+      fontFamily: 'System',
+      fontWeight: '100',
+    },
+  },
+  default: {
+    regular: {
+      fontFamily: 'sans-serif',
+      fontWeight: 'normal',
+    },
+    medium: {
+      fontFamily: 'sans-serif-medium',
+      fontWeight: 'normal',
+    },
+    light: {
+      fontFamily: 'sans-serif-light',
+      fontWeight: 'normal',
+    },
+    thin: {
+      fontFamily: 'sans-serif-thin',
+      fontWeight: 'normal',
+    },
+  },
+};
 
 export default {
   ...DefaultTheme,
@@ -7,4 +82,5 @@ export default {
     primary: '#607d8b',
     accent: '#7b1fa2',
   },
+  fonts: configureFonts(fontConfig),
 };

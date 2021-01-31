@@ -6,11 +6,11 @@
     "appium": "appium",
     "clean-modules": "rm -rf ./node_modules/react-native-permissions/{example,node_modules}",
     "clean": "rm -rf ./node_modules ./ios/Pods",
-    "postinstall": "patch-package && yarn clean-modules && yarn pod-update",
     "pod-update": "cd ./ios && pod update && cd ..",
     "start": "react-native start",
     "reinstall": "yarn clean && yarn install",
-    "test:windows": "yarn jest --setupFiles=./jest-setups/jest.setup.windows.js"
+    "test:windows": "yarn jest --setupFiles=./jest-setups/jest.setup.windows.js",
+    "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos"
   },
   "jest": {
     "preset": "react-native",
@@ -24,8 +24,9 @@
     ]
   },
   "dependencies": {
-    "react": "16.13.1",
-    "react-native": "0.63.3",
+    "react": "16.11.0",
+    "react-native": "~0.62.0",
+    "react-native-macos": "^0.62.0-0",
     "react-native-paper": "4.4.1",
     "react-native-permissions": "../",
     "react-native-vector-icons": "7.1.0",

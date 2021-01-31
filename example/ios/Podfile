@@ -22,7 +22,7 @@ platform :ios, '10.0'
 
 target 'RNPermissionsExample' do
   config = use_native_modules!
-  permissions_path = '../node_modules/react-native-permissions/ios'
+  permissions_path = '../node_modules/react-native-permissions/apple'
 
   use_react_native!(:path => config["reactNativePath"])
 

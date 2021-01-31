@@ -18,6 +18,7 @@ const PLATFORM_PERMISSIONS = Platform.select<
   android: PERMISSIONS.ANDROID,
   ios: PERMISSIONS_IOS,
   windows: PERMISSIONS.WINDOWS,
+  macos: PERMISSIONS.MACOS,
   default: {},
 });
 
