@@ -1,4 +1,5 @@
 import type {AndroidPermissionMap} from './permissions.android';
+import {MacosPermissionMap} from './permissions.macos';
 import type {WindowsPermissionMap} from './permissions.windows';
 
 const IOS = Object.freeze({
@@ -27,4 +28,5 @@ export const PERMISSIONS = Object.freeze({
   ANDROID: {} as AndroidPermissionMap,
   IOS,
   WINDOWS: {} as WindowsPermissionMap,
+  MACOS: {} as MacosPermissionMap,
 } as const);
